@@ -4,7 +4,7 @@ const utils = require("./utils");
 
 try {
   const composeFiles = utils.parseComposeFiles(
-    core.getMultilineInput("compose-file")
+    core.getMultilineInput("compose-file"),
   );
   if (!composeFiles.length) {
     return;
@@ -23,7 +23,7 @@ try {
     },
     (err) => {
       core.setFailed(`compose down failed ${err}`);
-    }
+    },
   );
 } catch (error) {
   core.setFailed(error.message);
