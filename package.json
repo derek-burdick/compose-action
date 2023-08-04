@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "package": "npm i && npx ncc build main.js -o dist/run && npx ncc build post.js -o dist/post",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.{js,json}\"",
-    "check-format": "prettier --check \"**/*.{js,json}\""
+    "lint": "npx eslint .",
+    "format": "npx prettier --write \"**/*.{js,json}\"",
+    "check-format": "npx prettier --check \"**/*.{js,json}\""
   },
   "keywords": [],
   "author": "",
